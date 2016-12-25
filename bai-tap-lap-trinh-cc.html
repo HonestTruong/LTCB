@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://vncoding.net/xmlrpc.php" />
+<title>Bài tập lập trình C/C++ | VnCoding</title>
+<link rel="alternate" type="application/rss+xml" title="VnCoding &raquo; Feed" href="http://vncoding.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="VnCoding &raquo; Comments Feed" href="http://vncoding.net/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/vncoding.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.4"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='collapseomatic-css-css'  href='http://vncoding.net/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css'  href='http://vncoding.net/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=1509' type='text/css' media='all' />
+<link rel='stylesheet' id='mh-magazine-lite-css'  href='http://vncoding.net/wp-content/themes/mh-magazine-lite/style.css?ver=4.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='mh-techmagazine-css'  href='http://vncoding.net/wp-content/themes/mh-techmagazine/style.css?ver=4.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600' type='text/css' media='all' />
+<link rel='stylesheet' id='mh-font-awesome-css'  href='http://vncoding.net/wp-content/themes/mh-magazine-lite/includes/font-awesome.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://vncoding.net/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://vncoding.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://vncoding.net/wp-content/themes/mh-magazine-lite/js/scripts.js?ver=4.3.4'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://vncoding.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://vncoding.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.3.4" />
+<link rel='canonical' href='http://vncoding.net/bai-tap-lap-trinh-cc/' />
+<link rel='shortlink' href='http://vncoding.net/?p=340' />
+<!--[if lt IE 9]>
+<script src="http://vncoding.net/wp-content/themes/mh-magazine-lite/js/css3-mediaqueries.js"></script>
+<![endif]-->
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+
+<!-- BEGIN GADWP v4.9.2 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-75635196-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+
+<!-- END GADWP Universal Tracking -->
+
+</head>
+<body id="mh-mobile" class="page page-id-340 page-template-default mh-right-sb">
+<div class="mh-header-mobile-nav clearfix"></div>
+<header class="mh-header">
+	<div class="mh-container mh-container-inner mh-row clearfix">
+		<div class="mh-custom-header" role="banner">
+<a href="http://vncoding.net/" title="VnCoding" rel="home">
+<div class="mh-site-logo" role="banner">
+<div class="mh-header-text">
+<h2 class="mh-header-title">VnCoding</h2>
+<h3 class="mh-header-tagline">Học Lập Trình Online Free</h3>
+</div>
+</div>
+</a>
+</div>
+	</div>
+	<div class="mh-main-nav-wrap">
+		<nav class="mh-main-nav mh-container mh-container-inner clearfix">
+			<div class="menu-menu_primary-container"><ul id="menu-menu_primary" class="menu"><li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-10"><a href="http://vncoding.net/cc/">C/C++</a>
+<ul class="sub-menu">
+	<li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="http://vncoding.net/ngon-ngu-lap-trinh-cc/">Ngôn ngữ lập trình C/C++</a></li>
+	<li id="menu-item-341" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-340 current_page_item menu-item-341"><a href="http://vncoding.net/bai-tap-lap-trinh-cc/">1000 Bài tập C/C++</a></li>
+	<li id="menu-item-344" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-344"><a href="http://vncoding.net/trac-nghiem-lap-trinh-cc/">1000 Câu hỏi trắc nghiệm C/C++</a></li>
+	<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-190"><a href="http://vncoding.net/lap-trinh-win32-api/">Lập trình Win32 API</a></li>
+	<li id="menu-item-1556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1556"><a href="http://vncoding.net/tuyen-tap-200-cau-hoi-phong-van-lap-trinh-cc/">200 Interview C/C++</a></li>
+	<li id="menu-item-1541" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1541"><a href="http://vncoding.net/ebook-ngon-ngu-lap-trinh/">Tài liệu</a></li>
+	<li id="menu-item-1054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1054"><a href="http://vncoding.net/thu-vien-ham-ngon-ngu-c/">Thư viện hàm ngôn ngữ C</a></li>
+</ul>
+</li>
+<li id="menu-item-2324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2324"><a href="http://vncoding.net/java/">Java</a>
+<ul class="sub-menu">
+	<li id="menu-item-2332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2332"><a href="http://vncoding.net/lap-trinh-java-swt/">Lập trình Java SWT</a></li>
+</ul>
+</li>
+<li id="menu-item-766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-766"><a href="http://vncoding.net/cau-truc-du-lieu-va-giai-thuat/">Cấu trúc dữ liệu và giải thuật</a>
+<ul class="sub-menu">
+	<li id="menu-item-1886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1886"><a href="http://vncoding.net/danh-sach-lien-ket/">Danh sách liên kết</a></li>
+	<li id="menu-item-1910" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1910"><a href="http://vncoding.net/ngan-xep-stack/">Ngăn xếp</a></li>
+	<li id="menu-item-2045" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2045"><a href="http://vncoding.net/2016/02/21/10-thuat-toan-sap-xep-co-ban/">Thuật toán sắp xếp</a></li>
+</ul>
+</li>
+</ul></div>		</nav>
+	</div>
+</header><div class="mh-container mh-container-outer">
+<div class="mh-wrapper clearfix">
+    <div id="main-content" class="mh-content"><article id="page-340" class="post-340 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title page-title">
+			Bài tập lập trình C/C++		</h1>
+	</header>
+	<div class="entry-content clearfix">
+		<div id="toc_container" class="no_bullets"><p class="toc_title">Contents</p><ul class="toc_list"><li><a href="#Phan_I_Bai_tap_C_co_ban"><span class="toc_number toc_depth_1">1</span> Phần I: Bài tập C cơ bản</a></li><li><a href="#Phan_II_Bai_tap_phan_mang_1_chieu"><span class="toc_number toc_depth_1">2</span> Phần II: Bài tập phần mảng 1 chiều</a></li><li><a href="#Phan_III_Bai_tap_ve_ma_tran"><span class="toc_number toc_depth_1">3</span> Phần III: Bài tập về ma trận</a></li><li><a href="#Phan_IV_Bai_tap_xu_li_chuoi"><span class="toc_number toc_depth_1">4</span> Phần IV: Bài tập xử lí chuỗi</a></li><li><a href="#Phan_V_Bai_tap_struct"><span class="toc_number toc_depth_1">5</span> Phần V: Bài tập struct</a></li><li><a href="#Phan_VI_Bai_tap_docghi_file"><span class="toc_number toc_depth_1">6</span> Phần VI: Bài tập đọc/ghi file</a></li><li><a href="#Phan_VII_Bai_taphuong_doi_tuong_C"><span class="toc_number toc_depth_1">7</span> Phần VII: Bài tập hướng đối tượng C++</a></li></ul></div>
+<div id="fsb-social-bar" class="fsb-social-bar" data-post-id="340" data-socialite="true"><style type="text/css">            #fsb-social-bar { width: 100%; border-bottom: 1px solid #dbdbdb; border-top: 1px solid #dbdbdb; padding: 10px 0; margin: 0px 0 20px 0; float: left; background: #fff; position: relative; clear: both; }            #fsb-social-bar a { border: 0px !important }            #fsb-social-bar.fsb-fixed { position: fixed; top: -2px; z-index: 99999; }            #fsb-social-bar .fsb-title { display: block; float: left; margin: 3px 20px 0 0; font-size: 16px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; color: #333; }            #fsb-social-bar .fsb-share-facebook { width: 120px; float: left; padding: 3px 0 2px; height: 25px; }            #fsb-social-bar .fsb-share-facebook.fsb-hide-count { width: 44px; overflow: hidden; margin-right: 30px; }            #fsb-social-bar .fsb-share-twitter { float: left; width: 135px; padding: 3px 0 2px; height: 25px; }            #fsb-social-bar .fsb-share-twitter.fsb-hide-count { width: 61px; overflow: hidden; margin-right: 30px; }            #fsb-social-bar .fsb-share-google { float: left; width: 105px; padding: 3px 0 2px; height: 25px; }            #fsb-social-bar .fsb-share-google.fsb-hide-count { width: 33px; overflow: hidden; margin-right: 30px; }            #fsb-social-bar .fsb-share-linkedin { float: left; width: 135px; padding: 3px 0 2px; height: 25px; }            #fsb-social-bar .fsb-share-linkedin.fsb-hide-count { width: 61px; overflow: hidden; margin-right: 30px; }            #fsb-social-bar .fsb-share-pinterest { float: left; width: 115px; padding: 3px 0 2px; height: 25px;}            #fsb-social-bar .fsb-share-pinterest.fsb-hide-count { width: 43px; overflow: hidden; margin-right: 30px; }            #fsb-social-bar .socialite { display: block; position: relative; background: url(http://vncoding.net/wp-content/plugins/floating-social-bar/images/fsb-sprite.png) no-repeat scroll 0 0; }            #fsb-social-bar .socialite-loaded { background: none !important; }            #fsb-social-bar .fsb-service-title { display: none; }            #fsb-social-bar a { color: #333; text-decoration: none; font-size: 12px; font-family: Arial, Helvetica, sans-serif; }            #fsb-social-bar .fsb-twitter { width: 105px; height: 25px; background-position: -13px -10px; line-height: 25px; vertical-align: middle; }            #fsb-social-bar .fsb-twitter .fsb-count { width: 30px; text-align: center; display: inline-block; margin: 0px 0 0 69px; color: #333; }            #fsb-social-bar .fsb-google { width: 75px; height: 25px; background-position: -136px -10px; line-height: 25px; vertical-align: middle; }            #fsb-social-bar .fsb-google .fsb-count { width: 30px; text-align: center; display: inline-block; margin: 0px 0 0 41px; color: #333; }            #fsb-social-bar .fsb-google .socialite-button { margin: 0 !important; }            #fsb-social-bar .fsb-share-google .socialite-loaded .socialite-button{padding: 2px 0 0}            #fsb-social-bar .fsb-facebook { width: 89px; height: 25px; background-position: -231px -10px; line-height: 25px; vertical-align: middle; }            #fsb-social-bar .fsb-facebook .fsb-count { width: 30px; text-align: center; display: inline-block; margin: 0px 0 0 52px; color: #333; }            #fsb-social-bar .fsb-facebook .socialite-button { margin: 0 !important;}            #fsb-social-bar .fsb-share-facebook .socialite-loaded .socialite-button {padding: 2px 0 0}            #fsb-social-bar .fsb-linkedin { width: 105px; height: 25px; background-position: -347px -10px; line-height: 25px; vertical-align: middle; }            #fsb-social-bar .fsb-linkedin .fsb-count { width: 30px; text-align: center; display: inline-block; margin: 0px 0 0 70px; color: #333; }            #fsb-social-bar .fsb-linkedin .socialite-button { margin: 0 !important; }            #fsb-social-bar .fsb-pinterest { width: 88px; height: 25px; background-position: -484px -10px; line-height: 25px; vertical-align: middle; }            #fsb-social-bar .fsb-pinterest .fsb-count { width: 30px; text-align: center; display: inline-block; margin: 0px 0 0 50px; color: #333; }            #fsb-social-bar .fsb-pinterest .socialite-button { margin: 0 !important; }            .fsb-clear { clear: both; }            .fsb-clear:after { clear:both; content:; display:block; height:0; line-height:0; overflow:auto; visibility:hidden; zoom:1; }            @media (max-width: 768px) { #fsb-social-bar.fsb-fixed { position: relative !important; top: auto !important; } }        </style><div class="fsb-share-facebook"><a href="http://www.facebook.com/sharer.php?u=http://vncoding.net/bai-tap-lap-trinh-cc/" class="socialite facebook fsb-facebook" data-fsb-service="facebook" data-href="http://vncoding.net/bai-tap-lap-trinh-cc/" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="fsb-service-title">Facebook</span><span class="fsb-count">69</span></a></div><div class="fsb-share-twitter fsb-hide-count"><a href="https://twitter.com/share?original_referer=http%3A%2F%2Fvncoding.net%2F&source=tweetbutton&text=B%C3%A0i+t%E1%BA%ADp+l%E1%BA%ADp+tr%C3%ACnh+C%2FC%2B%2B&url=http%3A%2F%2Fvncoding.net%2Fbai-tap-lap-trinh-cc%2F&via=" class="socialite twitter fsb-twitter" data-fsb-service="twitter" rel="nofollow" target="_blank" title="Be the first one to tweet this article!"><span class="fsb-service-title">Twitter</span><span class="fsb-count">0</span></a></div><div class="fsb-share-google"><a href="https://plus.google.com/share?url=http://vncoding.net/bai-tap-lap-trinh-cc/" class="socialite googleplus fsb-google" data-fsb-service="google" data-size="medium" data-href="http://vncoding.net/bai-tap-lap-trinh-cc/" rel="nofollow" target="_blank"><span class="fsb-service-title">Google+</span><span class="fsb-count">4</span></a></div></div><div class="fsb-clear"></div><p>Tục ngữ xưa đã có câu: &#8220;Học đi đôi với hành&#8221;, &#8220;Chăm hay không bằng tay quen&#8221;. Triết lý này đã trường tồn theo thời gian trong mọi lĩnh vực của cuộc sống. Với công việc lập trình cũng không ngoại lệ, người lập trình cũng giống như người công nhân, là người trực tiếp làm ra sản phẩm. Do vậy, kinh nghiệm và kỹ năng nghề là rất quan trọng. Để đạt được kĩ năng lập trình siêu việt không phải điều đơn giản. Chúng ta cần phải<span class="apple-converted-space"> </span>thường xuyên luyện tập code, update các kiến thức về lập trình, tư duy logic và thuật toán.</p>
+<p style="line-height: 17.65pt;"><span style="font-family: Helvetica, sans-serif; color: #666666;">Dưới đây, tôi xin giới thiệu 1000 bài tập lập trình C/C++ từ cơ bản tới nâng cao cho các bạn luyện tập. </span></p>
+<p style="line-height: 17.65pt;"><span style="font-family: Helvetica, sans-serif; color: #666666;">Bài viết này dành cho các bạn đã có kiến thức cơ bản về<span class="apple-converted-space"> </span><strong><span style="font-family: 'Helvetica','sans-serif';"><a href="http://vncoding.net/ngon-ngu-lap-trinh-cc/"><span style="color: #0088cc;">ngôn ngữ lập trình C/C++</span></a></span></strong></span></p>
+<h2 style="line-height: 17.65pt;"><span id="Phan_I_Bai_tap_C_co_ban"><span style="font-size: 14pt; color: #ff0000;">Phần I: Bài tập C cơ bản</span></span></h2>
+<p style="line-height: 17.65pt;"><span style="color: #000000;">(Trước khi làm bài tập phần này, các bạn nên bổ sung và xem lại kiến thức về <a href="http://vncoding.net/2015/10/24/lenh-ifelse/">câu lệnh if/else</a>, <a href="http://vncoding.net/2015/11/04/vong-lap-for-2/">vòng lặp for</a>, <a href="http://vncoding.net/2015/10/25/while-do-while/">while</a>,)</span></p>
+<table style="height: 48px;" width="723">
+<thead>
+<tr>
+<td style="width: 350px; text-align: left; vertical-align: top;">
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/29/in-ra-man-hinh-dong-chu-hello-world/">In ra màn hình dòng chữ Hello World</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/29/chuyen-doi-tu-nhiet-do-fahreneit-sang-selsius/">Chuyển đổi từ nhiệt độ Fahreneit sang Selsius</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/29/tinh-tong-binh-phuong-cua-2-so/">Tính tổng bình phương của 2 số</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/29/xac-dinh-goc-phan-tu-thu-may-tren-duong-tron-luong-giac/">Xác định góc phần tư thứ mấy trên đường tròn lượng giác</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/29/tinh-to%cc%89ng-nguyen-s-1-12-13-14-1n/">Tính tổng nguyên: S = 1 + 1/2 + 1/3 + 1/4 +&#8230; 1/n</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/29/tim-gia-tri-lon-nhat-trong-2-so/">Tìm giá trị lớn nhất của 2 số</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/29/tim-gia-tri-lon-nhat-cua-4-so-a-b-c-d/">Tìm giá trị lớn nhất của 4 số a,b,c,d</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/29/kie%cc%89m-tra-su%cc%a3-ton-ta%cc%a3i-cua-1-tam-giac/">Kiểm tra sự tồn tại của 1 tam giác</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/30/giai-phuong-trinh-bac-nhat/">Giải phương trình bậc nhất</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/30/giai-phuong-trinh-bac-hai/">Giải phương trình bậc hai</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/30/tim-uoc-so-chung-lon-nhat-va-bo%cc%a3i-so-chung-nho-nhat-cua-2-so-ab/">Tìm ước số chung và bội số chung nhỏ nhất của 2 số a,b</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/30/tach-cac-chu-so-thuoc-hang-tram-hang-chuc-hang-don-vi/">Tách các chữ số thuộc hàng trăm, hàng chục, hàng đơn vị</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/30/in-ra-so-hex-cua-so-nguyen-duong-tuong-ung/">In ra số Hex của số nguyên dương tương ứng</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/30/tim-so-amstrong/">Tìm số Amstrong</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/31/tinh-giai-thua/">Tính giai thừa số nguyên dương</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/31/chuong-trinh-tinh-giai-thua-cach/">Tính giai thừa cách</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/31/tinh-dien-tich-va-chu-vi-cac-hinh-tam-giac-vuong-chu-nhat-tron/">Tính diện tích, chu vi tam giác, đường tròn, hcn</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/31/chuong-trinh-kiem-tra-xem-so-n-co-phai-la-so-nguyen-to-khong/">Kiểm tra số N có phải là số nguyên tố không?</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/31/liet-ke-tat-ca-cac-so-nguyen-to-nho%cc%89-hon-gia-tri-n-nhap-tu-ban-phim/">Liệt kê các số nguyên tố nhỏ hơn N</a></p>
+</td>
+<td style="width: 350px; text-align: left; vertical-align: top;">
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/31/tim-so-hoan-hao-nho-hon-5000/">Tìm số hoàn hảo</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/31/viet-chuong-trinh-in-day-so-fibonanci/">In dãy số Fibonanci</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/31/chuong-trinh-tinh-tien-cuoc-taxi/">Tính cước taxi</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/31/giai-he-phuong-trinh-bac-nhat/">Giải hệ phương trình bậc nhất</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/10/31/in-ra-bang-cuu-chuong/">In ra bảng cửu chương</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/01/tinh-sinx/">Tính sinx</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/01/tinh-cosx/">Tính cosx</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/01/tinh-e-mu-x/">Tính e mũ x</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/01/tinh-pi/">Tính hằng số PI = 3.14</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/01/in-ra-tam-giac-pascal/">Hiển thị tam giác pascal</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/01/in-hinh-sao-ra-man-hinh/">Hiển thị hình sao</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/01/chuyen-doi-tu-so-la-ma-sang-so-thap-phan/">Chuyển đổi từ số la mã sang số thập phân</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/01/ham-doi-cho-2-so-nguyen/">Hàm swap</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/02/tinh-tong-cac-chu-so-trong-1-so/">Tính tổng các chữ số trong 1 số</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/02/chuyen-so-nhi-phan-sang-thap-phan/">Đổi từ hệ nhị phân sang hệ thập phân</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/02/doi-he-thap-phan-sang-nhi-phan/">Đổi từ hệ thập phân sang nhị phân</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/02/ham-kiem-tra-nam-nhuan/">Kiểm tra năm nhuận</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/02/ham-dao-nguoc-cac-chu-so-cua-1-so-nguyen/">Đảo ngược các chữ số trong 1 số</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/02/kiem-tra-so-co-doi-xung-hay-khong/">Kiểm tra số đối xứng hay không?</a></p>
+</td>
+</tr>
+</thead>
+</table>
+<h2 style="line-height: 17.65pt;"><span id="Phan_II_Bai_tap_phan_mang_1_chieu"><span style="color: #ff0000; font-size: 14pt;">Phần II: Bài tập phần mảng 1 chiều</span></span></h2>
+<p style="line-height: 17.65pt;">(Trước khi làm bài tập phần này, các bạn nên bổ sung và xem lại kiến thức về  mảng 1 chiều, <a href="http://vncoding.net/2015/10/24/lenh-ifelse/">câu lệnh if/else</a>, <a href="http://vncoding.net/2015/11/04/vong-lap-for-2/">vòng lặp for</a>, <a href="http://vncoding.net/2015/10/25/while-do-while/">while</a>, <a href="http://vncoding.net/2015/10/26/lenh-break/">break</a>)</p>
+<table style="height: 645px;" width="796">
+<tbody>
+<tr>
+<td style="width: 350px; text-align: left; vertical-align: top;">
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/02/chuong-trinh-nhap-mang-so-thuc-va-xuat-cac-phan-tu-am-ra-man-hinh/">In ra phần tử âm của mảng</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/02/xuat-ra-cac-phan-tu-co-gia-tri-le-trong-mang/">In ra các phần tử có giá trị lẻ của mảng</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/03/chuong-trinh-nhap-mang-so-nguyen-va-xuat-ra-gia-tri-chan-nho-hon-20/">In ra các phần tử chẵn và nhỏ hơn 20</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/03/tim-vi-tri-phan-tu-co-gia-tri-x-xuat-hien-cuoi-cung-trong-mang/">Tìm vị trí phần tử có giá trị x xuất hiện cuối cùng trong mảng</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/03/tim-vi-tri-cua-phan-tu-nho-nhat-trong-mang-1-chieu/">Tìm vị trí của phần tử nhỏ nhất trong mảng 1 chiều</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/03/tim-vi-tri-cua-phan-tu-lon-nhat-trong-mang-1-chieu/">Tìm vị trí của phần tử lớn nhất trong mảng 1 chiều</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/03/tinh-tong-cac-phan-tu-o-vi-tri-chan-trong-mang-1-chieu/">Tính tổng các phần tử ở vị trí chẵn trong mảng 1 chiều</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/03/tinh-tong-cac-phan-tu-cuc-dai-trong-mang-cac-so-nguyen/">Tính tổng các phần tử cực đai trong mảng số nguyên</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/03/tinh-tong-cac-phan-tu-cuc-tieu-trong-mang-cac-so-nguyen/">Tính tổng các phần tử cực tiểu trong mảng</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/03/sap-xep-mang-theo-thu-tu-giam-dan/">Sắp xếp mảng theo thứ tự giảm dần</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/03/sap-xep-cac-phan-tu-chan-giam-dan/">Sắp xếp các phần tử chẵn giảm dần</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/04/sap-xep-cac-phan-tu-am-duong-trong-mang/">Sắp xếp các phần tử âm dương trong mảng</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/04/xoa-phan-tu-tai-vi-tri-le-trong-mang/">Xóa phần tử tại vị trí lẻ trong mảng</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/04/xoa-phan-tu-co-gia-tri-lon-nhat-trong-mang/">Xóa phần tử có giá trị lớn nhất trong mảng</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/04/xoa-tat-ca-cac-phan-tu-nho-hon-x/">Xóa tất cả các phần tử nhỏ hơn X</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/04/xoa-phan-tu-co-gia-tri-gan-x-nhat/">Xóa phần tử có giá trị gần X nhất</a></p>
+</td>
+<td style="width: 350px; text-align: left; vertical-align: top;">
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/04/chen-phan-tu-x-vao-vi-tri-dau-cua-mang-1-chieu/">Chèn X vào vị trí đầu của mảng 1 chiều</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/05/chen-phan-tu-co-gia-tri-x-vao-phia-sau-phan-tu-co-gia-tri-lon-nhat-trong-mang/">Chèn X vào phía sau phần tử có giá trị lớn nhất trong mảng</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/05/chen-phan-tu-x-vao-tat-ca-cac-phan-tu-chan-trong-mang/">Chèn phần tử X vào tất cả các phần tử chẵn của mảng</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/05/tach-1-mang-nguyen-thanh-2-mang-chan-va-le/">Tách 1 mảng thành 2 mảng chẵn và lẻ</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/05/noi-2-mang-so-nguyen/">Nối 2 mảng số nguyên</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/05/kiem-tra-phan-tu-mang-1-chieu-khi-nhap-tu-ban-phim/">Kiểm tra phần tử mảng 1 chiều khi nhập từ bàn phím</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/05/hay-chi-ra-so-hang-lon-thu-k-cua-mang/">Chỉ ra số hạng lớn thứ k của mảng</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/05/kiem-tra-xem-day-a-co-phai-la-con-cua-day-b-hay-khong/">Kiểm tra dãy A có phải là con của dãy B không?</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/05/tinh-tong-tat-ca-cac-phan-tu-xung-quanh-tren-mang/">Tính tổng tất cả các phần tử xung quanh trong mảng</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/05/xoa-cac-phan-tu-trung-voi-x-trong-mang-1-chieu/">Xóa các phần tử trùng với X trong mảng 1 chiều</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/05/chen-x-vao-day-sao-cho-day-van-co-thu-tu-tang-dan/">Chèn X vào dãy sao cho dãy vẫn có thứ tự tăng dần</a></p>
+<p style="line-height: 17.65pt;"><a href="http://Tìm phần tử xuất hiện nhiều nhất trong mảng số nguyên">Tìm phần tử xuất hiện nhiều nhất trong mảng số nguyên</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/05/dao-nguoc-day-so/">Đảo ngược dãy số</a></p>
+<p style="line-height: 17.65pt;"><a href="http://vncoding.net/2015/11/06/kiem-tra-tinh-doi-xung-cua-mang/">Kiểm tra tính đối xứng của mảng</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><span id="Phan_III_Bai_tap_ve_ma_tran"><span style="font-size: 14pt; color: #ff0000;">Phần III: Bài tập về ma trận</span></span></h2>
+<table>
+<tbody>
+<tr>
+<td style="text-align: left; vertical-align: top;"><a href="http://vncoding.net/2015/12/12/viet-chuong-trinh-cong-2-ma-tran-bang-ngon-ngu-c/">Cộng 2 ma trận</a></p>
+<p><a href="http://vncoding.net/2015/12/12/viet-chuong-trinh-nhan-2-ma-tran-bang-ngon-ngu-c/">Nhân 2 ma trận</a></p>
+<p><a href="http://vncoding.net/2015/12/28/tinh-dinh-thuc-cua-ma-tran-nxn/">Tính định thức ma trận</a></td>
+</tr>
+</tbody>
+</table>
+<h2><span id="Phan_IV_Bai_tap_xu_li_chuoi"><span style="font-size: 14pt; color: #ff0000;">Phần IV: Bài tập xử lí chuỗi</span></span></h2>
+<table style="height: 192px;" width="758">
+<tbody>
+<tr>
+<td style="width: 350px;"><a href="http://vncoding.net/2016/01/04/ham-do-do-dai-cua-1-chuoi/">Tính độ dài chuỗi</a></p>
+<p><a href="http://vncoding.net/2016/01/04/ham-dao-cac-ki-tu-cua-1-chuoi/">Đảo các kí tự của chuỗi</a></p>
+<p><a href="http://vncoding.net/2016/01/07/dem-so-tu-trong-1-chuoi/">Đếm số từ trong 1 chuỗi</a></p>
+<p><a href="http://vncoding.net/2016/01/09/remove-space-trong-chuoi/">Remove space trong chuỗi</a></p>
+<p><a href="http://vncoding.net/2016/05/03/tim-vi-tri-ki-tu-xuat-hien-dau-tien-trong-chuoi/">Tìm vị trí kí tự xuất hiện đầu tiên trong chuỗi</a></p>
+<p><a href="http://vncoding.net/2016/05/03/tim-vi-tri-xuat-hien-cua-ki-tu-c-trong-chuoi-s/">Tìm vị trí xuất hiện của kí tự c trong chuỗi s</a></td>
+<td style="width: 350px; text-align: left; vertical-align: top;"><a href="http://vncoding.net/2016/01/11/tim-chuoi-con-trong-1-chuoi/">Tìm chuỗi con trong 1 chuỗi</a></p>
+<p><a href="http://vncoding.net/2016/01/11/kiem-tra-tinh-doi-xung-cua-chuoi/">Kiểm tra tính đối xứng của chuỗi</a></p>
+<p><a href="http://vncoding.net/2016/01/11/thay-the-ki-tu-trong-chuoi/">Thay thế kí tự trong chuỗi</a></p>
+<p><a href="http://vncoding.net/2016/01/12/doi-ki-tu-dau-tien-cua-moi-tu-thanh-chu-in-hoa/">Đổi kí tự đầu tiên của mỗi từ thành chữ in hoa</a></p>
+<p><a href="http://vncoding.net/2016/05/03/dem-so-lan-xuat-hien-cua-ki-tu-c-trong-chuoi-s/">Đếm số lần xuất hiện của kí tự c trong chuỗi s</a></p>
+<p><a href="http://vncoding.net/2016/05/03/thay-the-ki-tu-bat-ki-trong-chuoi-bang-ki-tu-moi/">Thay thế kí tự bất kì trong chuỗi bằng kí tự mới</a></td>
+</tr>
+</tbody>
+</table>
+<h2><span id="Phan_V_Bai_tap_struct"><span style="font-size: 14pt; color: #ff0000;">Phần V: Bài tập struct</span></span></h2>
+<p><a href="http://vncoding.net/2016/01/12/su-du%cc%a3ng-struct-de%cc%89-bie%cc%89u-die%cc%83n-va-hie%cc%89n-thi-thoi-gian-gio-phut-giay/">Sử dụng struct để biểu diễn và hiển thị giờ, phút, giây</a></p>
+<p><a href="http://vncoding.net/2016/01/13/bie%cc%89u-dien-so-phuc-bang-struct/">Biểu diễn số phức bằng struct</a></p>
+<p><a href="http://vncoding.net/2016/01/13/su%cc%89-du%cc%a3ng-struct-de%cc%89-bie%cc%89u-die%cc%83n-phan-so/">Biểu diễn phân số bằng struct</a></p>
+<p><a href="http://vncoding.net/2016/03/20/quan-li-sinh-vien-bang-struct/">Quản lý sinh viên bằng struct</a></p>
+<h2><span id="Phan_VI_Bai_tap_docghi_file"><span style="color: #ff0000; font-size: 14pt;">Phần VI: Bài tập đọc/ghi file</span></span></h2>
+<p><a href="http://vncoding.net/2016/03/20/tao-1-tep-tin-van-ban-chua-day-so-nguyen-bat-ki/">Tạo 1 tệp tin văn bản chứa dãy số nguyên bất kì</a></p>
+<p><a href="http://vncoding.net/2016/03/20/doc-ghi-file-nhi-phan/"> Đọc ghi file nhị phân</a></p>
+<p><a href="http://vncoding.net/2016/03/20/chuong-trinh-doc-ghi-file-chua-cac-so-nguyen/">Chương trình đọc ghi file chứa các số nguyên</a></p>
+<p><a href="http://vncoding.net/2016/03/20/tinh-tong-cac-phan-tu-trong-mang-va-ghi-ra-file/">Tính tổng các phần tử trong mảng và ghi ra file</a></p>
+<h2><span id="Phan_VII_Bai_taphuong_doi_tuong_C"><span style="color: #ff0000; font-size: 14pt;">Phần VII: Bài tập hướng đối tượng C++</span></span></h2>
+<p><a href="http://vncoding.net/2016/03/21/xay-dung-lop-hinh-tron-dan-xuat-tu-lop-diem-ke-thua-phuong-thuc-cua-lop-diem/">Xây dựng lớp hình tròn dẫn xuất từ lớp điểm</a></p>
+<p><a href="http://vncoding.net/2016/03/21/xay-dung-lop-nguoi-lop-dan-xuat-nhanvien-ke-thua-tu-lop-nguoi/">Xây dựng lớp Nguoi, lớp dẫn xuất Nhanvien kế thừa từ lớp Nguoi</a></p>
+<p><a href="http://vncoding.net/2016/03/21/xay-dung-lop-tam-giac-va-hinh-chu-nhat-ke-thua-tu-lop-da-giac/">Xây dựng lớp tam giác và hình chữ nhật kế thừa từ đa giác</a></p>
+<p><a href="http://vncoding.net/2016/03/21/xay-dung-1-lop-bieu-dien-xau-ki-tu-co-cac-ham-tao-va-ham-huy-can-thiet/">Xây dựng 1 lớp biểu diễn xâu kí tự có các hàm tạo và hàm hủy cần thiết</a></p>
+<p><a href="http://vncoding.net/2016/03/22/xay-dung-lop-doi-tuong-sach-trong-he-thong-quan-ly-thu-vien/">Xây dựng lớp đối tượng sách trong thư viện</a></p>
+<p><a href="http://vncoding.net/2016/03/22/viet-mot-lop-bieu-dien-hinh-chu-nhat-co-cac-thuoc-tinh-la-do-dai-hai-canh/">Viết 1 lớp biểu diễn hình chữ nhật có các thuộc tính là 2 cạnh</a></p>
+<p><a href="http://vncoding.net/2016/03/22/xay-dung-mot-lop-date-mo-ta-thong-tin-ve-ngay-thang-nam-month-day-year/">Xây dựng lớp Date mô tả thông tin ngày, tháng, năm</a></p>
+<p><a href="http://vncoding.net/2016/01/24/xay-dung-mot-lop-time-mo-ta-thong-tin-ve-gio-phut-giay/">Xây dựng một lớp Time mô tả thông tin về giờ, phút giây</a></p>
+<p><a href="http://vncoding.net/2016/03/22/xay-dung-ham-ban-de-tinh-dien-tich-hinh-chu-nhat/">Xây dựng hàm bạn để tính diện tích hình chữ nhật</a></p>
+<p><a href="http://vncoding.net/2016/03/23/xay-dung-lop-stack-cho-so-nguyen/">Xây dựng lớp stack cho số nguyên</a></p>
+<p><a href="http://vncoding.net/2016/03/26/xay-dung-lop-mo-ta-cac-bang-thi-dau-bong-da/">Xây dựng lớp mô tả bảng thi đấu bóng đá</a></p>
+<p>&nbsp;</p>
+	</div>
+</article>	</div>
+	<aside class="mh-widget-col-1 mh-sidebar">
+	<div id="search-2" class="mh-widget widget_search"><form role="search" method="get" class="search-form" action="http://vncoding.net/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></div><div id="categories-6" class="mh-widget widget_categories"><h4 class="mh-widget-title"><span class="mh-widget-title-inner">Categories</span></h4>		<ul>
+	<li class="cat-item cat-item-16"><a href="http://vncoding.net/category/advanced-cc/" >Advanced C/C++</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://vncoding.net/category/ansi-c/" >ANSI C</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="http://vncoding.net/category/data-struct-algorithm/" >Data struct &amp; Algorithm</a>
+</li>
+	<li class="cat-item cat-item-53"><a href="http://vncoding.net/category/java-swt/" >Java SWT</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="http://vncoding.net/category/oop-c/" >OOP C++</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://vncoding.net/category/quiz_cc/" >QUIZ_C/C++</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://vncoding.net/category/win32/" >Win32</a>
+</li>
+		</ul>
+</div><div id="tag_cloud-5" class="mh-widget widget_tag_cloud"><h4 class="mh-widget-title"><span class="mh-widget-title-inner">Tags</span></h4><div class="tagcloud"><a href='http://vncoding.net/tag/define-and-const/' class='tag-link-51' title='1 topic' style='font-size: 12px;'>#define and const</a>
+<a href='http://vncoding.net/tag/ansi-c/' class='tag-link-4' title='5 topics' style='font-size: 12px;'>ANSI C</a>
+<a href='http://vncoding.net/tag/bien-extern/' class='tag-link-20' title='1 topic' style='font-size: 12px;'>biến Extern</a>
+<a href='http://vncoding.net/tag/bien-global/' class='tag-link-19' title='1 topic' style='font-size: 12px;'>biến Global</a>
+<a href='http://vncoding.net/tag/bien-local/' class='tag-link-18' title='1 topic' style='font-size: 12px;'>biến Local</a>
+<a href='http://vncoding.net/tag/bien-static-va-const/' class='tag-link-21' title='1 topic' style='font-size: 12px;'>biến Static và Const</a>
+<a href='http://vncoding.net/tag/bai-tap-lap-trinh-cc/' class='tag-link-6' title='101 topics' style='font-size: 12px;'>bài tập lập trình C/C++</a>
+<a href='http://vncoding.net/tag/cc-interview/' class='tag-link-43' title='20 topics' style='font-size: 12px;'>C/C++ Interview</a>
+<a href='http://vncoding.net/tag/combobox/' class='tag-link-45' title='1 topic' style='font-size: 12px;'>Combobox</a>
+<a href='http://vncoding.net/tag/common-defect-in-cc/' class='tag-link-28' title='1 topic' style='font-size: 12px;'>Common defect in C/C++</a>
+<a href='http://vncoding.net/tag/con-tro-ham/' class='tag-link-52' title='1 topic' style='font-size: 12px;'>con trỏ hàm</a>
+<a href='http://vncoding.net/tag/cai-dat-da-thuc/' class='tag-link-40' title='1 topic' style='font-size: 12px;'>cài đặt đa thức</a>
+<a href='http://vncoding.net/tag/cap-phat-dong/' class='tag-link-44' title='1 topic' style='font-size: 12px;'>cấp phát động</a>
+<a href='http://vncoding.net/tag/ham/' class='tag-link-41' title='1 topic' style='font-size: 12px;'>Hàm</a>
+<a href='http://vncoding.net/tag/huong-doi-tuong-c/' class='tag-link-35' title='11 topics' style='font-size: 12px;'>hướng đối tượng C++</a>
+<a href='http://vncoding.net/tag/java/' class='tag-link-55' title='13 topics' style='font-size: 12px;'>java</a>
+<a href='http://vncoding.net/tag/java-swt/' class='tag-link-54' title='14 topics' style='font-size: 12px;'>Java SWT</a>
+<a href='http://vncoding.net/tag/kiem-tra-file/' class='tag-link-49' title='1 topic' style='font-size: 12px;'>Kiểm tra file</a>
+<a href='http://vncoding.net/tag/label/' class='tag-link-56' title='1 topic' style='font-size: 12px;'>Label</a>
+<a href='http://vncoding.net/tag/leak-memory/' class='tag-link-24' title='1 topic' style='font-size: 12px;'>leak memory</a>
+<a href='http://vncoding.net/tag/linked-list/' class='tag-link-38' title='2 topics' style='font-size: 12px;'>Linked List</a>
+<a href='http://vncoding.net/tag/ma-tran/' class='tag-link-30' title='2 topics' style='font-size: 12px;'>ma trận</a>
+<a href='http://vncoding.net/tag/ngan-xep/' class='tag-link-37' title='1 topic' style='font-size: 12px;'>Ngăn xếp</a>
+<a href='http://vncoding.net/tag/pointer/' class='tag-link-27' title='1 topic' style='font-size: 12px;'>pointer</a>
+<a href='http://vncoding.net/tag/static-lib/' class='tag-link-25' title='1 topic' style='font-size: 12px;'>Static lib</a>
+<a href='http://vncoding.net/tag/struct/' class='tag-link-33' title='4 topics' style='font-size: 12px;'>struct</a>
+<a href='http://vncoding.net/tag/sap-xep/' class='tag-link-47' title='1 topic' style='font-size: 12px;'>sắp xếp</a>
+<a href='http://vncoding.net/tag/thu-vien-ngon-ngu-cc/' class='tag-link-15' title='96 topics' style='font-size: 12px;'>Thư viện ngôn ngữ C/C++</a>
+<a href='http://vncoding.net/tag/treeview/' class='tag-link-46' title='1 topic' style='font-size: 12px;'>Treeview</a>
+<a href='http://vncoding.net/tag/truyen-doi-so/' class='tag-link-42' title='1 topic' style='font-size: 12px;'>truyền đối số</a>
+<a href='http://vncoding.net/tag/trac-nghiem-cc/' class='tag-link-13' title='5 topics' style='font-size: 12px;'>trắc nghiệm C/C++</a>
+<a href='http://vncoding.net/tag/tinh-dinh-thuc/' class='tag-link-31' title='1 topic' style='font-size: 12px;'>tính định thức</a>
+<a href='http://vncoding.net/tag/void/' class='tag-link-26' title='1 topic' style='font-size: 12px;'>void*</a>
+<a href='http://vncoding.net/tag/vong-lap-vo-han/' class='tag-link-50' title='1 topic' style='font-size: 12px;'>vong lap vo han</a>
+<a href='http://vncoding.net/tag/wchar-to-char/' class='tag-link-48' title='1 topic' style='font-size: 12px;'>wchar* to char*</a>
+<a href='http://vncoding.net/tag/win32/' class='tag-link-7' title='18 topics' style='font-size: 12px;'>WIN32</a>
+<a href='http://vncoding.net/tag/window-services-cc/' class='tag-link-29' title='1 topic' style='font-size: 12px;'>Window services C/C++</a>
+<a href='http://vncoding.net/tag/xu-li-chuoi/' class='tag-link-32' title='13 topics' style='font-size: 12px;'>xử lí chuỗi</a>
+<a href='http://vncoding.net/tag/dem-ki-tu/' class='tag-link-39' title='1 topic' style='font-size: 12px;'>Đếm kí tự</a></div>
+</div></aside></div>
+</div><!-- .mh-container-outer -->
+<footer class="mh-footer">
+	<div class="mh-container mh-container-inner mh-footer-widgets mh-row clearfix">
+					<div class="mh-col-1-4 mh-widget-col-1 mh-footer-area mh-footer-1">
+				<div id="text-7" class="mh-footer-widget widget_text"><h6 class="mh-widget-title mh-footer-widget-title"><span class="mh-widget-title-inner mh-footer-widget-title-inner">Contact us</span></h6>			<div class="textwidget"><p>Email: viethv.dt@gmail.com<br />
+Skype: vietvh004</p>
+</div>
+		</div>			</div>
+									</div>
+</footer>
+<div class="mh-copyright-wrap">
+	<div class="mh-container mh-container-inner clearfix">
+		<p class="mh-copyright">Copyright &copy; 2016 | WordPress Theme by <a href="http://www.mhthemes.com/" rel="nofollow">MH Themes</a></p>
+	</div>
+</div>
+<script type='text/javascript'>
+var colomatduration = 'fast';
+var colomatslideEffect = 'slideFade';
+</script><script type='text/javascript' src='http://vncoding.net/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.5.18'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://vncoding.net/wp-content/plugins/table-of-contents-plus/front.min.js?ver=1509'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fsb = {"ajax":"http:\/\/vncoding.net\/wp-admin\/admin-ajax.php","nonce":"f86eed1dd8"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://vncoding.net/wp-content/plugins/floating-social-bar/js/fsb.js?ver=1.1.7'></script>
+</body>
+</html>
